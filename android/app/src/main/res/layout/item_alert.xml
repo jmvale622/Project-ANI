@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardAlertContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_stats_card"
+    android:backgroundTint="#FBE8E4"
+    android:orientation="horizontal"
+    android:padding="20dp"
+    android:layout_marginBottom="16dp">
+
+    <FrameLayout
+        android:id="@+id/flIconContainer"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_alert_icon_container"
+        android:backgroundTint="#F5D6D0">
+        <TextView
+            android:id="@+id/tvAlertIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🌀"
+            android:textSize="22sp"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:id="@+id/tvAlertBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGNAL NO. 2"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:background="@drawable/bg_signal_badge"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="3dp"
+            android:letterSpacing="0.05" />
+
+        <TextView
+            android:id="@+id/tvAlertTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TC Dalisay approaching Batangas"
+            android:textColor="@color/ani_dark_green"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvAlertDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expected winds: 90–100 kph. Harvest ripe fruit and secure livestock before it arrives within 36 hours."
+            android:textColor="#333333"
+            android:textSize="13sp"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tvAlertTimestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAGASA bulletin · 2 hours ago"
+            android:textColor="#7A7568"
+            android:textSize="11sp"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+</LinearLayout>

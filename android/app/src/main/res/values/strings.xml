@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ANI</string>
+    <string name="tagline">Partner in every harvest</string>
+    <string name="get_started">GET STARTED</string>
+    <string name="create_account">Create Account</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="sign_in">SIGN IN</string>
+
+    <!-- Sign Up Labels -->
+    <string name="full_name_label">FULL NAME</string>
+    <string name="phone_label">PHONE NUMBER</string>
+    <string name="location_label">LOCATION</string>
+    <string name="crops_label">CROPS</string>
+    <string name="pin_label">PIN</string>
+    <string name="create_pin_label">CREATE PIN</string>
+
+    <!-- Hints -->
+    <string name="full_name_hint">e.g. Ver Santos</string>
+    <string name="location_hint">City, Province</string>
+    <string name="crops_hint">Select crops</string>
+
+    <string name="full_name">Full name</string>
+    <string name="contact">Phone Number/Email</string>
+    <string name="address">Address</string>
+    <string name="password">Password</string>
+
+    <!-- Sign In -->
+    <string name="welcome">Welcome</string>
+    <string name="hello_user">Hello, %1$s!</string>
+    <string name="join_community">Join the community and start protecting your crops</string>
+    <string name="signin_instruction">Sign in using your number and PIN.</string>
+    <string name="forgot_pin">Forgot PIN?</string>
+    <string name="mag_signin_btn">Sign In</string>
+    <string name="mag_patuloy_btn">Continue</string>
+    <string name="no_account">Don\'t have an account? </string>
+    <string name="gumawa_dito">Create here</string>
+    <string name="already_have_account">Already have an account? </string>
+    <string name="mag_signin_link">Sign in</string>
+
+    <string name="coop_lipa">Lipa Cooperative</string>
+    <string name="coop_batangas">Batangas Farmers Coop</string>
+    <string name="bayad_pinsala">Damage Payout</string>
+    <string name="received_payout">RECEIVED PAYOUT</string>
+    <string name="proseso">PROCESS</string>
+    <string name="typhoon_hit">TC Dalisay hit Batangas</string>
+    <string name="satellite_assessment">Satellite damage assessment</string>
+    <string name="damage_confirmed">Damage confirmed in the area — %1$s</string>
+    <string name="auto_verify">Automated trigger verification</string>
+    <string name="threshold_reached">Reached Signal No. 3 threshold — %1$s</string>
+    <string name="payout_sent">Payout already sent</string>
+    <string name="no_claim_form">No claim form needed — %1$s</string>
+    <string name="claim_status_no_form">No claim form needed · %1$s</string>
+    <string name="alerto">Alerts</string>
+    <string name="signal_2">SIGNAL NO. 2</string>
+    <string name="typhoon_alert_title">TC Dalisay near Batangas</string>
+    <string name="typhoon_alert_desc">Expected winds: 90–100 kph. Harvest ripe crops and ensure livestock safety before arrival within 36 hours.</string>
+    <string name="talaan">History</string>
+    <string name="high">High</string>
+    <string name="moderate">Moderate</string>
+    <string name="recent_diagnoses">RECENT DIAGNOSES</string>
+    <string name="kamakailang_suri">RECENT SCANS</string>
+
+    <!-- Validation / Toast Messages -->
+    <string name="error_fill_fields">Please fill in all fields.</string>
+    <string name="error_invalid_auth">Invalid phone/email or password.</string>
+    <string name="signup_success">Signed up successfully!</string>
+    <string name="error_select_crop">Please select at least one crop.</string>
+    <string name="error_no_image">Error: No image found</string>
+    <string name="analysis_failed">Analysis failed: %1$s</string>
+    <string name="no_prediction_title">No prediction made</string>
+    <string name="no_prediction_crop_unsupported">%1$s is not supported by the current model.</string>
+    <string name="no_prediction_category_unsupported">The current model does not have supported %1$s classes for %2$s yet.</string>
+    <string name="no_prediction_unsuitable_image">This image does not look sufficiently like a supported %1$s sample for %2$s. Capture a clear, close photo of the selected crop and try again.</string>
+    <string name="disease_category">disease</string>
+    <string name="pest_category">pest</string>
+    <string name="scan_again">Scan again</string>
+    <string name="close">Close</string>
+
+    <!-- Settings -->
+    <string name="choose_language">Choose Language</string>
+    <string name="english">English</string>
+    <string name="tagalog">Tagalog</string>
+    <string name="language">Language</string>
+    <string name="app_settings">APP SETTINGS</string>
+    <string name="account">ACCOUNT</string>
+    <string name="log_out">Log Out</string>
+    <string name="settings">Profile</string>
+
+    <!-- Nav tabs -->
+    <string name="home_tab">Home</string>
+    <string name="map_tab">Records</string>
+    <string name="alerts_tab">Alerts</string>
+    <string name="funds_tab">Funds</string>
+    <string name="profile_tab">Profile</string>
+
+    <!-- Home Dashboard -->
+    <string name="crop_detect_subtitle">Crop Disease Detect</string>
+    <string name="kunin_larawan">Take a Photo</string>
+    <string name="huling_suri">LATEST SCAN</string>
+    <string name="no_previous_scans">No previous scans</string>
+    <string name="scan_instruction">Scan a crop to see results here</string>
+    <string name="scans_this_month">Scans this month</string>
+    <string name="active_alerts">Active alerts</string>
+    <string name="tiwala_label">%1$s confidence</string>
+    <string name="typhoon_banner">Signal No. 2 — TC Dalisay near Batangas within 36 hours. View alerts.</string>
+
+    <!-- Capture Activity -->
+    <string name="capture_instruction">Place the leaf inside the frame</string>
+    <string name="offline_mode">OFFLINE MODE</string>
+    <string name="palay">Rice</string>
+    <string name="mangga">Mango</string>
+    <string name="mais">Corn</string>
+
+    <!-- Analysis & Result -->
+    <string name="analyzing_title">Analyzing image…</string>
+    <string name="analyzing_subtitle">Do not close the app. Just a few seconds left.</string>
+    <string name="step_quality">Image quality — OK</string>
+    <string name="step_detection">YOLOv11 detection — in progress</string>
+    <string name="step_confidence">Confidence score</string>
+    <string name="step_recommendation">AI Recommendation</string>
+
+    <string name="result_title">Result</string>
+    <string name="tiwala">CONFIDENCE</string>
+    <string name="rekomendasyon_label">RECOMMENDATION</string>
+    <string name="product_label">SUGGESTED PRODUCT</string>
+    <string name="save_btn">Save to Record</string>
+    <string name="cancel">Cancel</string>
+    <string name="offline_llm_title">Offline AI recommendations</string>
+    <string name="offline_llm_status_missing">Download model ›</string>
+    <string name="offline_llm_status_ready">Ready offline ›</string>
+    <string name="offline_llm_unsupported">Not supported</string>
+    <string name="offline_llm_unsupported_message">On-device language model inference requires a non-low-RAM 64-bit ARM or x86_64 device. The existing offline image classification and built-in recommendations remain available.</string>
+    <string name="offline_llm_download_message">Download the %1$s Qwen3 0.6B model now to generate recommendations on this phone without a connection. The model is stored on this device and scan details are not uploaded for local generation. A connection is required for this one-time download; Wi-Fi is recommended. Model: Qwen3-0.6B-int4, Apache-2.0. Hugging Face model page: huggingface.co/litert-community/Qwen3-0.6B-int4</string>
+    <string name="offline_llm_remove_message">The offline recommendation model is installed. Remove it to free about 331 MiB? Offline recommendations will use the built-in advice until the model is downloaded again.</string>
+    <string name="offline_llm_download_action">Download</string>
+    <string name="offline_llm_remove_action">Remove model</string>
+    <string name="offline_llm_downloading">Downloading model… Keep the app open.</string>
+    <string name="offline_llm_progress">%1$d%% · %2$d / %3$d MiB</string>
+    <string name="offline_llm_downloaded">Offline AI model is ready.</string>
+    <string name="offline_llm_removed">Offline AI model removed.</string>
+    <string name="offline_llm_error">Offline model error: %1$s</string>
+
+    <!-- New Scan Page -->
+    <string name="new_scan_title">New Scan</string>
+    <string name="new_scan_subtitle">How do you want to check your crop today?</string>
+    <string name="phone_camera_title">Disease Detection</string>
+    <string name="phone_camera_subtitle">Leaf &amp; plant symptoms</string>
+    <string name="phone_camera_desc">Scans leaves, stems, and fruits to detect plant diseases and infection.</string>
+    <string name="pest_classification_title">Pest Classification</string>
+    <string name="pest_classification_subtitle">Insects, larvae &amp; pest damage</string>
+    <string name="pest_classification_desc">Scans plants and crops to detect insects, larvae, and pest damage.</string>
+    <string name="drone_survey_title">Drone Survey</string>
+    <string name="drone_survey_subtitle">Whole field, from above</string>
+    <string name="drone_survey_desc">Best for spotting spread you cannot walk to. Maps every zone and ranks them by severity.</string>
+    <string name="coop_pilot_info">No drone of your own? A cooperative pilot can be booked for your barangay.</string>
+    <string name="continue_btn">Continue</string>
+    <string name="badge_20_sec">~20 SEC</string>
+    <string name="badge_15_min">~15 MIN</string>
+    <string name="badge_offline_caps">OFFLINE</string>
+    <string name="badge_needs_signal">NEEDS SIGNAL</string>
+    <string name="badge_free">FREE</string>
+    <string name="badge_drone_price">₱150 / HA</string>
+
+    <!-- Drone Survey Result Page -->
+    <string name="drone_survey_header">Drone Survey</string>
+    <string name="back_arrow">←</string>
+    <string name="export_icon">📤</string>
+    <string name="drone_photo_label">Drone photo</string>
+    <string name="browse_files">browse files</string>
+    <string name="drone_meta">DJI Mavic  ·  42 m AGL  ·  Jul 8</string>
+    <string name="ha_scanned_val">0.8</string>
+    <string name="ha_scanned_label">Ha\nscanned</string>
+    <string name="plants_read_val">1,240</string>
+    <string name="plants_read_label">Plants read</string>
+    <string name="affected_val">18%</string>
+    <string name="affected_label">Affected</string>
+    <string name="field_summary_title">FIELD SUMMARY</string>
+    <string name="field_summary_text">Bacterial Leaf Blight detected across two zones on the north and east edges. Spread is following the irrigation line — treat those blocks first before the next watering.</string>
+    <string name="zone_breakdown_title">ZONE BREAKDOWN</string>
+    <string name="view_treatment_btn">View Treatment</string>
+    <string name="save_record_btn">Save</string>
+
+    <!-- Zone Status Badges -->
+    <string name="status_high">HIGH</string>
+    <string name="status_watch">WATCH</string>
+    <string name="status_clear">CLEAR</string>
+
+    <!-- Zones -->
+    <string name="zone_a_title">Zone A — North</string>
+    <string name="zone_a_subtitle">Rice  ·  61 detections</string>
+    <string name="zone_c_title">Zone C — East</string>
+    <string name="zone_c_subtitle">Rice  ·  38 detections</string>
+    <string name="zone_b_title">Zone B — Centre</string>
+    <string name="zone_b_subtitle">Rice  ·  14 detections</string>
+    <string name="zone_d_title">Zone D — South</string>
+    <string name="zone_d_subtitle">Mango  ·  3 detections</string>
+    <string name="drone_survey_summary">18% affected  ·  2 high zones</string>
+    <string name="drop_aerial_photo">Drop an aerial photo of the farmland</string>
+
+    <!-- Treatment Plan Page -->
+    <string name="treatment_plan_header">Treatment Plan</string>
+    <string name="bacterial_leaf_blight">Bacterial Leaf Blight</string>
+    <string name="from_drone_survey_meta">From drone survey · Jul 8\n· 0.8 ha</string>
+    <string name="treatment_plan_summary_text">Treat the two high zones first — 0.34 ha in total. Leave Zone D untreated and re-survey it in a week.</string>
+    <string name="ha_to_treat_val">0.34</string>
+    <string name="ha_to_treat_label">Ha to treat</string>
+    <string name="total_mix_val">2.1 L</string>
+    <string name="total_mix_label">Total mix</string>
+    <string name="est_cost_val">₱620</string>
+    <string name="est_cost_label">Est. cost</string>
+    <string name="treat_order_title">TREAT IN THIS ORDER</string>
+    <string name="badge_today">TODAY</string>
+    <string name="step_1_title">1 · Zone A — North</string>
+    <string name="step_1_desc">0.21 ha · Copper fungicide at 2 g per litre. Spray early morning, both leaf faces.</string>
+    <string name="step_1_mix">1.3 L mix</string>
+    <string name="step_1_time">≈ 40 min</string>
+    <string name="step_2_title">2 · Zone C — East</string>
+    <string name="step_2_desc">0.13 ha · Same mix. Cut and burn the worst plants along the irrigation line first.</string>
+    <string name="step_2_mix">0.8 L mix</string>
+    <string name="step_2_time">≈ 25 min</string>
+
+    <!-- Funds / Pondo dashboard -->
+    <string name="funds_coming_soon">Coming Soon</string>
+    <string name="funds_subtitle">Financing and insurance for your farm, both facilitated through ANI.</string>
+    <string name="aniloan">ANILoan</string>
+    <string name="aniloan_desc">Microfinancing Partners</string>
+    <string name="eligible_amount">ELIGIBLE AMOUNT</string>
+    <string name="open">Open →</string>
+    <string name="aniprotect">ANI Protect</string>
+    <string name="aniprotect_desc">Crop insurance cover</string>
+    <string name="coverage">COVERAGE</string>
+    <string name="already_active">ALREADY ACTIVE</string>
+    <string name="active_loan">Active loan</string>
+    <string name="file_insurance_claim">File an insurance claim</string>
+    <string name="policy_id">Policy ANI-P-0842</string>
+
+    <!-- Loan Detail -->
+    <string name="aktibong_pautang">Active Loan</string>
+    <string name="natitira"> remaining</string>
+    <string name="due_date">DUE %1$s</string>
+    <string name="talaan_bayaran">REPAYMENT SCHEDULE</string>
+    <string name="bayad_na">PAID</string>
+    <string name="in_days">IN %1$s DAYS</string>
+    <string name="final_payment">FINAL PAYMENT</string>
+    <string name="magbayad_ngayon">Pay Now</string>
+
+    <string name="qualified_amount">QUALIFIED AMOUNT</string>
+    <string name="loan_amount_val">₱6,500</string>
+    <string name="loan_reason">Based on 14 healthy harvests and 92% average diagnosis confidence</string>
+    <string name="choose_cooperative">CHOOSE A COOPERATIVE</string>
+    <string name="loan_details_title">DETAILS</string>
+    <string name="loan_amount_label">Loan amount</string>
+    <string name="facilitation_fee_label">Facilitation fee</string>
+    <string name="repayment_term_label">Repayment term</string>
+    <string name="first_payment_label">First payment</string>
+    <string name="apply_now_btn">Apply Now</string>
+
+    <!-- Legacy / Internal use -->
+    <string name="eligible_amount_label">QUALIFIED AMOUNT</string>
+    <string name="eligibility_reason">Based on 14 healthy harvests and 92%\naverage scan confidence</string>
+    <string name="choose_coop">CHOOSE COOPERATIVE</string>
+    <string name="repayment_fee">%1$s fee</string>
+    <string name="repayment_period">Repayment period</string>
+    <string name="apply_now">Apply Now</string>
+
+    <!-- Insurance Detail -->
+    <string name="coverage_amount">COVERAGE AMOUNT</string>
+    <string name="insurance_desc">Crop insurance · 0.8 hectares of Mango</string>
+    <string name="choose_plan">CHOOSE A PLAN</string>
+    <string name="basic_plan">Basic</string>
+    <string name="plus_plan">Plus</string>
+    <string name="price_per_season">%1$s / season</string>
+    <string name="what_is_covered">WHAT IS COVERED</string>
+    <string name="strong_wind">Strong Wind</string>
+    <string name="flooding">Flooding</string>
+    <string name="disease">Disease</string>
+    <string name="crop_label">Crop</string>
+    <string name="farm_area_label">Farm area</string>
+    <string name="premium_label">Premium</string>
+    <string name="coverage_until_label">Coverage until</string>
+    <string name="apply_for_insurance">Apply for Insurance</string>
+    <string name="payout_status">Transferred to your GCash · %1$s</string>
+
+    <!-- File Claim -->
+    <string name="file_claim_title">File a Claim</string>
+    <string name="active_status">ACTIVE</string>
+    <string name="cause_damage_label">CAUSE OF DAMAGE</string>
+    <string name="upload_photo_label">UPLOAD PHOTO PROOF</string>
+    <string name="add_photo">Add photo</string>
+    <string name="upload_desc">Take clear photos of the damaged plants and the whole field. Location and date are recorded automatically.</string>
+    <string name="describe_damage_label">DESCRIBE THE DAMAGE</string>
+    <string name="describe_hint">e.g. Around half the trees lost their fruit after the storm on Jul 9...</string>
+    <string name="assessor_alert">An assessor reviews your photos within 3 working days.</string>
+    <string name="submit_claim">Submit Claim</string>
+
+    <!-- Profile -->
+    <string name="plots_label">Plots</string>
+    <string name="hectares_label">Hectares</string>
+    <string name="scans_label">Scans</string>
+    <string name="my_farm">MY FARM</string>
+    <string name="location_item">Location</string>
+    <string name="alert_notifications">Alert notifications</string>
+    <string name="change_pin">Change PIN</string>
+
+    <!-- Misc -->
+    <string name="pagasa_bulletin">PAGASA BULLETIN · 2 HOURS AGO</string>
+    <string name="payment_item">%1$s — %2$s</string>
+    <string name="payout_status_gcash">Transferred to your GCash · %1$s</string>
+</resources>

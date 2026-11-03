@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ani_dark_green">#3D3929</color> <!-- Dark Earthy Brown / Charcoal -->
+    <color name="ani_green">#5B6146</color>
+    <color name="ani_cream_bg">#F1ECE1</color> <!-- Soft Bone White Background -->
+    <color name="ani_card_bg">#FAF7F0</color> <!-- Off-white card background -->
+    <color name="ani_orange">#A67C31</color> <!-- Muted Terracotta / Khaki Accent -->
+    <color name="ani_orange_link">#A67C31</color>
+    <color name="ani_green_light">#F5F1E9</color>
+    <color name="ani_green_chip_bg">#E8E0D5</color>
+    <color name="ani_red_bg">#FBE8E4</color> <!-- Soft Peach Alert Background -->
+    <color name="ani_red_text">#8A4A21</color>
+    <color name="ani_peach_bg">#FBE8E4</color>
+    <color name="ani_brown_text">#6E685C</color>
+    <color name="ani_khaki">#C2B99E</color> <!-- Khaki Sand Secondary Button -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="text_gray">#7A7568</color>
+    <color name="text_gray_light">#9A9588</color>
+    <color name="text_hint">#B4B0A0</color>
+    <color name="border_color">#E5DDD0</color>
+
+    <!-- Legacy/Result colors -->
+    <color name="ani_red_bar">#A64B2A</color>
+    <color name="ani_amber_bg">#FBE8E4</color>
+    <color name="ani_amber_text">#A67C31</color>
+    <color name="ani_amber_bar">#C68E28</color>
+    <color name="ani_green_bar">#3D3929</color>
+</resources>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_stats_card"
+    android:backgroundTint="#FAF7F0"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change PIN"
+        android:textColor="@color/ani_dark_green"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="serif" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CURRENT PIN"
+        android:textColor="#7A7568"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.08"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/etCurrentPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_signup_input"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:layout_marginTop="6dp"
+        android:textSize="16sp"
+        android:textColor="#2C2C2C"
+        android:inputType="numberPassword"
+        android:letterSpacing="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEW PIN"
+        android:textColor="#7A7568"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.08"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/etNewPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_signup_input"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:layout_marginTop="6dp"
+        android:textSize="16sp"
+        android:textColor="#2C2C2C"
+        android:inputType="numberPassword"
+        android:letterSpacing="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONFIRM NEW PIN"
+        android:textColor="#7A7568"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.08"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/etConfirmNewPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_signup_input"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:layout_marginTop="6dp"
+        android:textSize="16sp"
+        android:textColor="#2C2C2C"
+        android:inputType="numberPassword"
+        android:letterSpacing="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCancelPin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_orange_button"
+            android:text="Cancel"
+            android:textColor="@color/ani_dark_green"
+            android:textStyle="bold"
+            android:paddingVertical="12dp"
+            android:layout_marginEnd="8dp"
+            android:textAllCaps="false" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSavePin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dark_green_button"
+            android:text="Update PIN"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:paddingVertical="12dp"
+            android:layout_marginStart="8dp"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+Maize|Pest|Corn Borer
+Maize|Pest|Fall Armyworm
+Maize|Disease|Maize Blight
+Maize|Disease|Maize Gray Leaf Spot
+Maize|Health|Healthy Maize
+Maize|Disease|Maize Rust
+OutOfScope|Other|Mango
+Rice|Disease|Rice Bacterial Blight
+Rice|Disease|Rice Brown Spot
+Rice|Pest|Rice Bug
+Rice|Disease|Rice False Smut
+Rice|Health|Healthy Rice
+Rice|Disease|Rice Leaf Blast
+Rice|Pest|Rice Leaf Roller
+Rice|Disease|Rice Leaf Smut
+Rice|Disease|Rice Neck Blast
+Rice|Pest|Rice Stem Borer
+Sugarcane|Disease|Sugarcane Brown Spot
+Sugarcane|Health|Healthy Sugarcane
+Sugarcane|Pest|Sugarcane Leaf Hopper
+Sugarcane|Disease|Sugarcane Pineapple
+Sugarcane|Disease|Sugarcane Red Rot
+Sugarcane|Pest|Sugarcane Root and Base Pest
+Sugarcane|Disease|Sugarcane Scorch
+Sugarcane|Pest|Sugarcane Shoot Borer
+Sugarcane|Pest|Sugarcane White Sucking Pest

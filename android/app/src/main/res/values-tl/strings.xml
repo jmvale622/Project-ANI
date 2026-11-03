@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ANI</string>
+    <string name="tagline">Katuwang sa bawat ani</string>
+    <string name="get_started">MAG-SIMULA</string>
+    <string name="create_account">Gumawa ng Account</string>
+    <string name="sign_up">MAG-SIGN UP</string>
+    <string name="sign_in">MAG-SIGN IN</string>
+
+    <!-- Sign Up Labels -->
+    <string name="full_name_label">BUONG PANGALAN</string>
+    <string name="phone_label">NUMERO NG TELEPONO</string>
+    <string name="location_label">LOKASYON</string>
+    <string name="crops_label">MGA TANIM</string>
+    <string name="pin_label">PIN</string>
+    <string name="create_pin_label">LUMIKHA NG PIN</string>
+
+    <!-- Hints -->
+    <string name="full_name_hint">hal. Ver Santos</string>
+    <string name="location_hint">Lungsod, Lalawigan</string>
+    <string name="crops_hint">Pumili ng mga tanim</string>
+
+    <string name="full_name">Buong pangalan</string>
+    <string name="contact">Numero / Email</string>
+    <string name="address">Tirahan</string>
+    <string name="password">Password</string>
+
+    <!-- Sign In -->
+    <string name="welcome">Maligayang Pagdating</string>
+    <string name="hello_user">Kamusta, %1$s!</string>
+    <string name="join_community">Sumali sa komunidad at simulang protektahan ang iyong pananim</string>
+    <string name="signin_instruction">Mag-sign in gamit ang iyong numero at PIN.</string>
+    <string name="forgot_pin">Nakalimutan ang PIN?</string>
+    <string name="mag_signin_btn">Mag-sign In</string>
+    <string name="mag_patuloy_btn">Magpatuloy</string>
+    <string name="no_account">Wala pang account? </string>
+    <string name="gumawa_dito">Gumawa dito</string>
+    <string name="already_have_account">May account ka na ba? </string>
+    <string name="mag_signin_link">Mag-sign in</string>
+
+    <string name="coop_lipa">Kooperatiba ng Lipa</string>
+    <string name="coop_batangas">Kooperatiba ng Batangas</string>
+    <string name="bayad_pinsala">Bayad Pinsala</string>
+    <string name="received_payout">NATANGGAP NA ANG BAYAD</string>
+    <string name="proseso">PROSESO</string>
+    <string name="typhoon_hit">Tumatama ang Bagyong Dalisay sa Batangas</string>
+    <string name="satellite_assessment">Pagsusuri ng pinsala gamit ang satellite</string>
+    <string name="damage_confirmed">Kumpirmadong may pinsala sa lugar — %1$s</string>
+    <string name="auto_verify">Awtomatikong beripikasyon</string>
+    <string name="threshold_reached">Naabot ang Signal No. 3 — %1$s</string>
+    <string name="payout_sent">Naipadala na ang bayad</string>
+    <string name="no_claim_form">Hindi kailangan ng form — %1$s</string>
+    <string name="claim_status_no_form">Hindi kailangan ng form · %1$s</string>
+    <string name="alerto">Mga Alerto</string>
+    <string name="signal_2">SIGNAL NO. 2</string>
+    <string name="typhoon_alert_title">Bagyong Dalisay malapit sa Batangas</string>
+    <string name="typhoon_alert_desc">Inaasahang hangin: 90–100 kph. Anihin ang mga hinog na tanim bago dumating ang bagyo sa loob ng 36 oras.</string>
+    <string name="talaan">Mga Tala</string>
+    <string name="high">Mataas</string>
+    <string name="moderate">Katamtaman</string>
+    <string name="recent_diagnoses">MGA KAMAKAILANG SURI</string>
+    <string name="kamakailang_suri">KAMAKAILANG SURI</string>
+
+    <!-- Validation / Toast Messages -->
+    <string name="error_fill_fields">Pakiusap punan ang lahat ng patlang.</string>
+    <string name="error_invalid_auth">Maling numero/email o password.</string>
+    <string name="signup_success">Matagumpay na nakapag-sign up!</string>
+    <string name="error_select_crop">Pumili man lang ng isang tanim.</string>
+    <string name="error_no_image">Maling larawan</string>
+    <string name="analysis_failed">Pagsusuri ay nabigo: %1$s</string>
+    <string name="no_prediction_title">Walang nabuong resulta</string>
+    <string name="no_prediction_crop_unsupported">Hindi sinusuportahan ng kasalukuyang modelo ang %1$s.</string>
+    <string name="no_prediction_category_unsupported">Wala pang suportadong klase ng %1$s para sa %2$s sa kasalukuyang modelo.</string>
+    <string name="no_prediction_unsuitable_image">Hindi sapat ang pagkakatugma ng larawang ito sa suportadong %1$s para sa %2$s. Kumuha ng malinaw at malapit na larawan ng napiling pananim at subukan muli.</string>
+    <string name="disease_category">sakit sa tanim</string>
+    <string name="pest_category">peste</string>
+    <string name="scan_again">Mag-scan muli</string>
+    <string name="close">Isara</string>
+
+    <!-- Settings -->
+    <string name="choose_language">Pumili ng Wika</string>
+    <string name="english">Ingles</string>
+    <string name="tagalog">Tagalog</string>
+    <string name="language">Wika</string>
+    <string name="app_settings">MGA SETTING NG APP</string>
+    <string name="account">ACCOUNT</string>
+    <string name="log_out">Mag-Log Out</string>
+    <string name="settings">Profile</string>
+
+    <!-- Nav tabs -->
+    <string name="home_tab">Home</string>
+    <string name="map_tab">Mga Tala</string>
+    <string name="alerts_tab">Alerto</string>
+    <string name="funds_tab">Pondo</string>
+    <string name="profile_tab">Profile</string>
+
+    <!-- Home Dashboard -->
+    <string name="crop_detect_subtitle">Pagsusuri ng Sakit sa Tanim</string>
+    <string name="kunin_larawan">Kumuha ng Larawan</string>
+    <string name="huling_suri">HULING SURI</string>
+    <string name="no_previous_scans">Wala pang nakaraang suri</string>
+    <string name="scan_instruction">Magsuri ng tanim upang makita ang resulta dito</string>
+    <string name="scans_this_month">Mga pagsusuri ngayong buwan</string>
+    <string name="active_alerts">Aktibong alerto</string>
+    <string name="tiwala_label">%1$s antas ng tiwala</string>
+    <string name="typhoon_banner">Signal No. 2 — Bagyong Dalisay malapit sa Batangas sa loob ng 36 oras. Tingnan ang alerto.</string>
+
+    <!-- Capture Activity -->
+    <string name="capture_instruction">Ilagay ang dahon sa loob ng frame</string>
+    <string name="offline_mode">WALANG INTERNET MODE</string>
+    <string name="palay">Palay</string>
+    <string name="mangga">Mangga</string>
+    <string name="mais">Mais</string>
+
+    <!-- Analysis & Result -->
+    <string name="analyzing_title">Sinusuri ang larawan…</string>
+    <string name="analyzing_subtitle">Huwag isara ang app. Ilang segundo na lang.</string>
+    <string name="step_quality">Kalidad ng larawan — OK</string>
+    <string name="step_detection">Pagsusuri ng YOLOv11 — ginagawa na</string>
+    <string name="step_confidence">Antas ng tiwala</string>
+    <string name="step_recommendation">Rekomendasyon ng AI</string>
+
+    <string name="result_title">Resulta</string>
+    <string name="tiwala">ANTAS NG TIWALA</string>
+    <string name="rekomendasyon_label">REKOMENDASYON</string>
+    <string name="product_label">IMINUMUNGKAHING PRODUKTO</string>
+    <string name="save_btn">I-save sa Rekord</string>
+    <string name="cancel">Kanselahin</string>
+    <string name="offline_llm_title">Offline na AI na rekomendasyon</string>
+    <string name="offline_llm_status_missing">I-download ang modelo ›</string>
+    <string name="offline_llm_status_ready">Handa offline ›</string>
+    <string name="offline_llm_unsupported">Hindi suportado</string>
+    <string name="offline_llm_unsupported_message">Kailangan ng 64-bit ARM o x86_64 device na hindi low-RAM para sa lokal na language model. Mananatiling magagamit ang kasalukuyang offline image classification at built-in na rekomendasyon.</string>
+    <string name="offline_llm_download_message">I-download ngayon ang Qwen3 0.6B model (%1$s) upang makabuo ng rekomendasyon sa telepono kahit walang koneksyon. Mananatili ang modelo sa teleponong ito at hindi ia-upload ang detalye ng pagsusuri para sa lokal na pagbuo. Kailangan ng koneksyon para sa isang beses na pag-download; inirerekomenda ang Wi-Fi. Modelo: Qwen3-0.6B-int4, Apache-2.0. Hugging Face: huggingface.co/litert-community/Qwen3-0.6B-int4</string>
+    <string name="offline_llm_remove_message">Naka-install ang offline recommendation model. Alisin ito upang magbakante ng humigit-kumulang 331 MiB? Gagamit muna ng built-in na payo ang offline scan kapag inalis ito.</string>
+    <string name="offline_llm_download_action">I-download</string>
+    <string name="offline_llm_remove_action">Alisin ang modelo</string>
+    <string name="offline_llm_downloading">Dina-download ang modelo… Huwag isara ang app.</string>
+    <string name="offline_llm_progress">%1$d%% · %2$d / %3$d MiB</string>
+    <string name="offline_llm_downloaded">Handa na ang offline AI model.</string>
+    <string name="offline_llm_removed">Inalis ang offline AI model.</string>
+    <string name="offline_llm_error">Error sa offline model: %1$s</string>
+
+    <!-- New Scan Page -->
+    <string name="new_scan_title">Bagong Pagsusuri</string>
+    <string name="new_scan_subtitle">Paano mo gustong suriin ang iyong tanim ngayon?</string>
+    <string name="phone_camera_title">Pagsusuri ng Sakit</string>
+    <string name="phone_camera_subtitle">Sintomas sa dahon at halaman</string>
+    <string name="phone_camera_desc">Sinisuri ang mga dahon at halaman upang matukoy ang mga sakit sa pananim.</string>
+    <string name="pest_classification_title">Klasipikasyon ng Peste</string>
+    <string name="pest_classification_subtitle">Insekto, uod at pinsala ng peste</string>
+    <string name="pest_classification_desc">Sinisuri ang mga halaman upang matukoy ang mga pesteng sumisira sa pananim.</string>
+    <string name="drone_survey_title">Drone Survey</string>
+    <string name="drone_survey_subtitle">Buong bukid, mula sa itaas</string>
+    <string name="drone_survey_desc">Pinakamainam para sa pagsusuri ng buong bukid.</string>
+    <string name="coop_pilot_info">Walang sariling drone? Maaaring mag-book ng pilot mula sa kooperatiba.</string>
+    <string name="continue_btn">Magpatuloy</string>
+    <string name="badge_20_sec">~20 SEGUNDO</string>
+    <string name="badge_15_min">~15 MINUTO</string>
+    <string name="badge_offline_caps">OFFLINE</string>
+    <string name="badge_needs_signal">KAILANGAN NG SIGNAL</string>
+    <string name="badge_free">LIBRE</string>
+    <string name="badge_drone_price">₱150 / HA</string>
+
+    <!-- Funds / Pondo dashboard -->
+    <string name="funds_coming_soon">Malapit na</string>
+    <string name="funds_subtitle">Pinansyal at seguro para sa iyong bukid sa tulong ng ANI.</string>
+    <string name="aniloan">ANILoan</string>
+    <string name="aniloan_desc">Mga Kasosyo sa Microfinancing</string>
+    <string name="eligible_amount">KILALANG HALAGA</string>
+    <string name="open">Buksan →</string>
+    <string name="aniprotect">ANI Protect</string>
+    <string name="aniprotect_desc">Proteksyon sa seguro ng tanim</string>
+    <string name="coverage">KABUUANG SEGURO</string>
+    <string name="already_active">MGA AKTIBA NA</string>
+    <string name="active_loan">Aktibong utang</string>
+    <string name="file_insurance_claim">Magsumite ng claim sa seguro</string>
+    <string name="policy_id">Polisa ANI-P-0842</string>
+
+    <!-- Loan Detail -->
+    <string name="aktibong_pautang">Aktibong Utang</string>
+    <string name="natitira"> natitira</string>
+    <string name="due_date">TAKDA %1$s</string>
+    <string name="talaan_bayaran">RASYON NG PAGBAYAD</string>
+    <string name="bayad_na">BAYAD NA</string>
+    <string name="in_days">SA %1$s ARAW</string>
+    <string name="final_payment">HULING BAYAD</string>
+    <string name="magbayad_ngayon">Magbayad Ngayon</string>
+
+    <string name="qualified_amount">KILALANG HALAGA</string>
+    <string name="loan_amount_val">₱6,500</string>
+    <string name="loan_reason">Batay sa 14 na malusog na ani at 92% na tiwala sa pagsusuri</string>
+    <string name="choose_cooperative">PUMILI NG KOOPERATIBA</string>
+    <string name="loan_details_title">MGA DETALYE</string>
+    <string name="loan_amount_label">Halaga ng utang</string>
+    <string name="facilitation_fee_label">Bayad sa pasilidad</string>
+    <string name="repayment_term_label">Panahon ng pagbabayad</string>
+    <string name="first_payment_label">Unang pagbabayad</string>
+    <string name="apply_now_btn">Mag-apply Ngayon</string>
+
+    <!-- Insurance Detail -->
+    <string name="coverage_amount">HALAGA NG SEGURO</string>
+    <string name="insurance_desc">Seguro sa tanim · 0.8 ektarya ng Mangga</string>
+    <string name="choose_plan">PUMILI NG PLANO</string>
+    <string name="basic_plan">Pangunahin</string>
+    <string name="plus_plan">Plus</string>
+    <string name="price_per_season">%1$s / panahon</string>
+    <string name="what_is_covered">MGA SAKOP NG SEGURO</string>
+    <string name="strong_wind">Malakas na Hangin</string>
+    <string name="flooding">Baha</string>
+    <string name="disease">Sakit sa Tanim</string>
+    <string name="crop_label">Tanim</string>
+    <string name="farm_area_label">Sukat ng Bukid</string>
+    <string name="premium_label">Bayad sa Seguro</string>
+    <string name="coverage_until_label">Bisa hanggang</string>
+    <string name="apply_for_insurance">Kumuha ng Seguro</string>
+
+    <!-- File Claim -->
+    <string name="file_claim_title">Magsumite ng Claim</string>
+    <string name="active_status">AKTIBA</string>
+    <string name="cause_damage_label">DAHILAN NG PINSALA</string>
+    <string name="upload_photo_label">MAG-UPLOAD NG LARAWAN</string>
+    <string name="add_photo">Magdagdag</string>
+    <string name="upload_desc">Kumuha ng malinaw na larawan ng naapektuhang tanim at buong bukid.</string>
+    <string name="describe_damage_label">ILALARAWAN ANG PINSALA</string>
+    <string name="describe_hint">hal. Halos kalahati ng puno ay nasira pagkatapos ng bagyo...</string>
+    <string name="assessor_alert">Susuriin ng tagasuri ang iyong mga larawan sa loob ng 3 araw.</string>
+    <string name="submit_claim">Isumite ang Claim</string>
+
+    <!-- Profile -->
+    <string name="plots_label">Mga Plot</string>
+    <string name="hectares_label">Ektarya</string>
+    <string name="scans_label">Mga Suri</string>
+    <string name="my_farm">AKING BUKID</string>
+    <string name="location_item">Lokasyon</string>
+    <string name="alert_notifications">Notipikasyon sa Alerto</string>
+    <string name="change_pin">Palitan ang PIN</string>
+
+    <!-- Misc -->
+    <string name="pagasa_bulletin">ULAT NG PAGASA · 2 ORAS ANG NAKALIPAS</string>
+    <string name="payment_item">%1$s — %2$s</string>
+</resources>

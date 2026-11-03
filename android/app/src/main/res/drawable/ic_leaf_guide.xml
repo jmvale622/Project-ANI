@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="160dp"
+    android:viewportWidth="120"
+    android:viewportHeight="160">
+
+    <!-- Leaf outer outline -->
+    <path
+        android:pathData="M60,20 C32,50 24,80 24,100 C24,122 40,138 60,138 C80,138 96,122 96,100 C96,80 88,50 60,20 Z"
+        android:strokeColor="#D8D0C0"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="#00000000" />
+
+    <!-- Center vein (midrib) line -->
+    <path
+        android:pathData="M60,20 L60,138"
+        android:strokeColor="#D8D0C0"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000" />
+</vector>

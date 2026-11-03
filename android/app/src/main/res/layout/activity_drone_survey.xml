@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ani_cream_bg">
+
+    <!-- Fixed Header -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="50dp"
+        android:paddingBottom="16dp"
+        android:paddingHorizontal="24dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="←"
+            android:textColor="@color/ani_dark_green"
+            android:textSize="24sp"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/drone_survey_header"
+            android:textColor="@color/ani_dark_green"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <FrameLayout
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_icon_button"
+            android:padding="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⇄"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:rotation="90" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        android:clipToPadding="false"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingBottom="60dp">
+
+            <!-- Drone Photo Upload Area -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/bg_drone_upload"
+                android:layout_marginTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🖼️"
+                        android:textSize="32sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/drone_photo_label"
+                        android:textColor="@color/text_gray"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/browse_files"
+                        android:textColor="@color/ani_dark_green"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|start"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/bg_dark_green_button"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="4dp"
+                    android:text="@string/drone_meta"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.05" />
+
+                <!-- Detections (Overlay representation) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/bg_badge_diseased"
+                    android:backgroundTint="#A64B2A"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="2dp"
+                    android:text="BLIGHT 0.93"
+                    android:textColor="@color/white"
+                    android:textSize="9sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/bg_scan_zone"
+                    android:backgroundTint="#00000000" />
+
+            </FrameLayout>
+
+            <!-- Stats Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_stats_card"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_marginEnd="8dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ha_scanned_val" android:textColor="@color/ani_dark_green" android:textSize="28sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ha_scanned_label" android:textColor="@color/text_gray" android:textSize="11sp" android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:background="@drawable/bg_stats_card"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="4dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/plants_read_val" android:textColor="@color/ani_dark_green" android:textSize="28sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/plants_read_label" android:textColor="@color/text_gray" android:textSize="11sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_affected_stat"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_marginStart="8dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/affected_val" android:textColor="#A64B2A" android:textSize="28sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/affected_label" android:textColor="#A64B2A" android:textSize="11sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Field Summary Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_stats_card"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:layout_marginTop="24dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/field_summary_title"
+                    android:textColor="@color/ani_brown_text"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.1" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/field_summary_text"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    android:lineSpacingExtra="6dp"
+                    android:layout_marginTop="12dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zone_breakdown_title"
+                android:textColor="@color/text_gray"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.1"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Zone Breakdown Items -->
+            <!-- Zone A -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_zone_card"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_marginBottom="12dp">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zone_a_title" android:textColor="@color/ani_dark_green" android:textSize="16sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="@string/status_high" android:background="@drawable/bg_badge_diseased" android:paddingHorizontal="10dp" android:paddingVertical="3dp" android:textColor="@color/ani_red_text" android:textSize="9sp" android:textStyle="bold" />
+                </RelativeLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zone_a_subtitle" android:textColor="@color/text_gray" android:textSize="13sp" android:layout_marginTop="4dp" />
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                    <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="6dp" android:progress="34" android:progressTint="@color/ani_red_text" android:progressBackgroundTint="#E8E0D5" android:layout_centerVertical="true" android:layout_toStartOf="@id/tvPctA" android:layout_marginEnd="12dp" />
+                    <TextView android:id="@+id/tvPctA" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="34%" android:textColor="@color/ani_dark_green" android:textSize="13sp" android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- Zone C -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_zone_card"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_marginBottom="12dp">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zone_c_title" android:textColor="@color/ani_dark_green" android:textSize="16sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="@string/status_high" android:background="@drawable/bg_badge_diseased" android:paddingHorizontal="10dp" android:paddingVertical="3dp" android:textColor="@color/ani_red_text" android:textSize="9sp" android:textStyle="bold" />
+                </RelativeLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zone_c_subtitle" android:textColor="@color/text_gray" android:textSize="13sp" android:layout_marginTop="4dp" />
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                    <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="6dp" android:progress="22" android:progressTint="@color/ani_red_text" android:progressBackgroundTint="#E8E0D5" android:layout_centerVertical="true" android:layout_toStartOf="@id/tvPctC" android:layout_marginEnd="12dp" />
+                    <TextView android:id="@+id/tvPctC" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="22%" android:textColor="@color/ani_dark_green" android:textSize="13sp" android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- Zone B -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_zone_card"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_marginBottom="12dp">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zone_b_title" android:textColor="@color/ani_dark_green" android:textSize="16sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="@string/status_watch" android:background="@drawable/bg_badge_warning" android:paddingHorizontal="10dp" android:paddingVertical="3dp" android:textColor="@color/ani_orange_link" android:textSize="9sp" android:textStyle="bold" />
+                </RelativeLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zone_b_subtitle" android:textColor="@color/text_gray" android:textSize="13sp" android:layout_marginTop="4dp" />
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                    <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="6dp" android:progress="9" android:progressTint="@color/ani_orange_link" android:progressBackgroundTint="#E8E0D5" android:layout_centerVertical="true" android:layout_toStartOf="@id/tvPctB" android:layout_marginEnd="12dp" />
+                    <TextView android:id="@+id/tvPctB" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="9%" android:textColor="@color/ani_dark_green" android:textSize="13sp" android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- Zone D -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_zone_card"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_marginBottom="32dp">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zone_d_title" android:textColor="@color/ani_dark_green" android:textSize="16sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="@string/status_clear" android:background="@drawable/bg_badge_healthy" android:paddingHorizontal="10dp" android:paddingVertical="3dp" android:textColor="@color/ani_green" android:textSize="9sp" android:textStyle="bold" />
+                </RelativeLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zone_d_subtitle" android:textColor="@color/text_gray" android:textSize="13sp" android:layout_marginTop="4dp" />
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                    <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="6dp" android:progress="2" android:progressTint="@color/ani_green" android:progressBackgroundTint="#E8E0D5" android:layout_centerVertical="true" android:layout_toStartOf="@id/tvPctD" android:layout_marginEnd="12dp" />
+                    <TextView android:id="@+id/tvPctD" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="2%" android:textColor="@color/ani_dark_green" android:textSize="13sp" android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- Bottom Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <Button
+                    android:id="@+id/btnViewTreatment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/bg_primary_button"
+                    android:text="@string/view_treatment_btn"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:paddingVertical="18dp"
+                    android:layout_marginEnd="16dp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btnSaveRecord"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_secondary_pill_button"
+                    android:text="@string/save_record_btn"
+                    android:textColor="@color/ani_dark_green"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:paddingVertical="18dp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
