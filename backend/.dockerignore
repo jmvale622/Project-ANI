@@ -1,0 +1,16 @@
+.venv
+.venv-*/
+**/.venv/
+**/__pycache__/
+*.py[cod]
+.env
+.DS_Store
+
+data/
+training/
+runs/
+project-*/
+models/**
+!models/ani_yolo11_crop_scoped_sugarcane_pests/
+!models/ani_yolo11_crop_scoped_sugarcane_pests/weights/
+!models/ani_yolo11_crop_scoped_sugarcane_pests/weights/best.pt

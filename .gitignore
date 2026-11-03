@@ -1,0 +1,41 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Python virtual environments
+.venv/
+.venv-*/
+venv/
+**/.venv/
+**/.venv-*/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.cache
+
+# Secrets
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Extracted training datasets
+backend/data/datasets/
+backend/data/datasets_crop_scoped/
+backend/data/data/datasets/
+backend/data/data/datasets_clean/
+
+# Extracted training datasets
+backend/data/datasets/
+backend/data/datasets_crop_scoped/
+backend/data/data/datasets/
+backend/data/data/datasets_clean/

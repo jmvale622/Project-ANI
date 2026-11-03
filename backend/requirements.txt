@@ -1,0 +1,23 @@
+# ML
+ultralytics
+pillow
+numpy
+
+# Storage
+boto3
+
+# Database
+couchbase
+
+# API
+fastapi
+uvicorn
+python-multipart
+beautifulsoup4
+pdfplumber
+
+# LLM (Ollama - local, no API key needed)
+requests
+
+# Utils
+python-dotenv
