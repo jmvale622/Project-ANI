@@ -56,6 +56,8 @@
     <string name="typhoon_alert_title">TC Dalisay near Batangas</string>
     <string name="typhoon_alert_desc">Expected winds: 90–100 kph. Harvest ripe crops and ensure livestock safety before arrival within 36 hours.</string>
     <string name="talaan">History</string>
+    <string name="history_empty">No scans yet. Tap the camera on Home to diagnose your first crop.</string>
+    <string name="history_load_error">Couldn\'t load records. Check your connection and try again.</string>
     <string name="high">High</string>
     <string name="moderate">Moderate</string>
     <string name="recent_diagnoses">RECENT DIAGNOSES</string>

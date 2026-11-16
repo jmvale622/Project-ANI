@@ -56,6 +56,8 @@
     <string name="typhoon_alert_title">Bagyong Dalisay malapit sa Batangas</string>
     <string name="typhoon_alert_desc">Inaasahang hangin: 90–100 kph. Anihin ang mga hinog na tanim bago dumating ang bagyo sa loob ng 36 oras.</string>
     <string name="talaan">Mga Tala</string>
+    <string name="history_empty">Wala pang scan. Pindutin ang camera sa Home para masuri ang iyong unang pananim.</string>
+    <string name="history_load_error">Hindi ma-load ang mga tala. Suriin ang iyong koneksyon at subukang muli.</string>
     <string name="high">Mataas</string>
     <string name="moderate">Katamtaman</string>
     <string name="recent_diagnoses">MGA KAMAKAILANG SURI</string>

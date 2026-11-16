@@ -69,9 +69,10 @@ class ScanFragment : Fragment() {
                 }
             }
         }
+    }
 
-        if (viewModel.history.value == null) {
-            viewModel.fetchHistory(requireContext())
-        }
+    override fun onResume() {
+        super.onResume()
+        viewModel.fetchHistory(requireContext())
     }
 }

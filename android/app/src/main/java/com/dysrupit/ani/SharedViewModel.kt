@@ -18,6 +18,9 @@ class SharedViewModel : ViewModel() {
     private val _history = MutableLiveData<List<HistoryItem>>()
     val history: LiveData<List<HistoryItem>> = _history
 
+    private val _historyError = MutableLiveData(false)
+    val historyError: LiveData<Boolean> = _historyError
+
     private val _alerts = MutableLiveData<List<AlertItem>>().apply {
         value = getDemoAlertList()
     }
@@ -27,17 +30,24 @@ class SharedViewModel : ViewModel() {
     val isLoading: LiveData<Boolean> = _isLoading
 
     fun fetchHistory(context: Context) {
-        val accessToken = AuthManager.getAccessToken(context) ?: return
+        val accessToken = AuthManager.getAccessToken(context) ?: run {
+            _historyError.value = true
+            return
+        }
         _isLoading.value = true
         RetrofitClient.instance.getHistory("Bearer $accessToken", 20).enqueue(object : Callback<HistoryResponse> {
             override fun onResponse(call: Call<HistoryResponse>, response: Response<HistoryResponse>) {
                 _isLoading.value = false
                 if (response.isSuccessful) {
+                    _historyError.value = false
                     _history.value = response.body()?.history ?: emptyList()
+                } else {
+                    _historyError.value = true
                 }
             }
             override fun onFailure(call: Call<HistoryResponse>, t: Throwable) {
                 _isLoading.value = false
+                _historyError.value = true
             }
         })
     }

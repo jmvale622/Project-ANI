@@ -16,6 +16,8 @@ import com.dysrupit.ani.utils.HistoryItem
 class HistoryFragment : Fragment() {
 
     private lateinit var rvTalaan: RecyclerView
+    private lateinit var tvHistoryEmpty: TextView
+    private var shownItems: List<HistoryItem>? = null
     private val viewModel: SharedViewModel by activityViewModels()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -27,13 +29,37 @@ class HistoryFragment : Fragment() {
 
         rvTalaan = view.findViewById(R.id.rvTalaan)
         rvTalaan.layoutManager = LinearLayoutManager(requireContext())
+        tvHistoryEmpty = view.findViewById(R.id.tvHistoryEmpty)
+        shownItems = null
 
         viewModel.history.observe(viewLifecycleOwner) { items ->
-            rvTalaan.adapter = TalaanAdapter(items)
+            if (items != shownItems) {
+                shownItems = items
+                rvTalaan.adapter = TalaanAdapter(items)
+            }
+            updateEmptyState()
         }
+        viewModel.historyError.observe(viewLifecycleOwner) { updateEmptyState() }
+    }
 
-        if (viewModel.history.value == null) {
-            viewModel.fetchHistory(requireContext())
+    override fun onResume() {
+        super.onResume()
+        viewModel.fetchHistory(requireContext())
+    }
+
+    private fun updateEmptyState() {
+        val items = viewModel.history.value
+        when {
+            !items.isNullOrEmpty() -> tvHistoryEmpty.visibility = View.GONE
+            viewModel.historyError.value == true -> {
+                tvHistoryEmpty.setText(R.string.history_load_error)
+                tvHistoryEmpty.visibility = View.VISIBLE
+            }
+            items != null -> {
+                tvHistoryEmpty.setText(R.string.history_empty)
+                tvHistoryEmpty.visibility = View.VISIBLE
+            }
+            else -> tvHistoryEmpty.visibility = View.GONE
         }
     }
 
