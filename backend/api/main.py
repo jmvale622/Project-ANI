@@ -44,7 +44,12 @@ from .schemas import (
     UserProfile,
 )
 from .weather import scrape_all_pagasa
-from couchbase.exceptions import DocumentExistsException, DocumentNotFoundException
+from couchbase.exceptions import (
+    CouchbaseException,
+    DocumentExistsException,
+    DocumentNotFoundException,
+    QueryIndexAlreadyExistsException,
+)
 
 try:
     from couchbase.auth import PasswordAuthenticator
@@ -74,6 +79,17 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
             f"CREATE PRIMARY INDEX IF NOT EXISTS ON `{CB_BUCKET}`._default._default"
         )
         list(index_result.rows())
+        try:
+            list(cluster.query(
+                f"CREATE INDEX idx_scan_history IF NOT EXISTS ON `{CB_BUCKET}`._default._default("
+                "`type`, user_id, `timestamp` DESC, scan_id, crop, status, disease, confidence, "
+                "overall_accuracy, scan_mode, classification_state)",
+                QueryOptions(timeout=timedelta(seconds=30)),
+            ).rows())
+        except QueryIndexAlreadyExistsException:
+            pass  # already there: success
+        except CouchbaseException:
+            logger.warning("Could not create idx_scan_history; /history may be slow", exc_info=True)
         app.state.cluster = cluster
         app.state.collection = cluster.bucket(CB_BUCKET).default_collection()
         yield
